@@ -3,7 +3,6 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-
 body {
   margin: 0;
 }
@@ -24,7 +23,6 @@ hr {
   overflow: visible; /* 2 */
 }
 
-
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
@@ -33,6 +31,7 @@ pre {
 a {
   background-color: transparent;
 }
+
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
@@ -91,7 +90,6 @@ input { /* 1 */
   overflow: visible;
 }
 
-
 button,
 select { /* 1 */
   text-transform: none;
@@ -112,7 +110,6 @@ button::-moz-focus-inner,
   padding: 0;
 }
 
-
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -120,12 +117,9 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
-
-
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
-
 
 legend {
   box-sizing: border-box; /* 1 */
@@ -136,17 +130,13 @@ legend {
   white-space: normal; /* 1 */
 }
 
-
 progress {
   vertical-align: baseline;
 }
 
-
 textarea {
   overflow: auto;
 }
-
-
 
 [type="checkbox"],
 [type="radio"] {
@@ -154,50 +144,36 @@ textarea {
   padding: 0; /* 2 */
 }
 
-
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-
-
 
 [type="search"] {
   --webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
-
-
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
-
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
-
-
 details {
   display: block;
 }
-
 
 summary {
   display: list-item;
 }
 
-
-
 template {
   display: none;
 }
-
 
 [hidden] {
   display: none;

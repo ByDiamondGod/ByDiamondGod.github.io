@@ -1,24 +1,11 @@
-/* Colors */
-/* 
-Morado | fuenes = #7D73EF
-Modrado claro | botones = #7E74F1
-Morado oscuro | Otros = #4B4B87
-
-Background Strong = #282D3F
-Background light = #2D3346
-
-blur header
-        background-color: rgba(40, 45, 63, 0.6);
-        backdrop-filter: blur(8px);
-
-
-TODO (Fuentes tipografias colores)
-*/
-
 :root {
+    --purple: #7E74F1;
+    --purple-2:#7D73EF ;  
+    --white: #FFFFFF;
+    --background-strong:#282D3F ;
+    --background-light:#2D3346;
     --skills-bar-length: 0%;
 }
-
 
 /** Universal browser settings */
 
@@ -31,9 +18,7 @@ TODO (Fuentes tipografias colores)
     text-decoration: none;
 }
 
-
 /** Google Fonts */
-
 
 /** Body | Scroll */
 
@@ -42,7 +27,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #7D73EF;
+    background: var(--purple-2);
 }
 
 body {
@@ -51,6 +36,20 @@ body {
     line-height: 28px;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
+}
+
+/** Sections  */
+
+.introduction,
+.portfolio,
+.skills {
+    background-color: var(--background-strong);
+}
+
+.services,
+.experience,
+.contact {
+    background-color: var(--background-light);
 }
 
 /** Containers  */
@@ -76,7 +75,6 @@ body {
     border-bottom: 1px solid #35394a;
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); */
 }
-
 
 .header .container {
     display: flex;
@@ -108,17 +106,10 @@ body {
 }
 
 .header__a:hover {
-    color: #7D73EF;
-}
-
-
-/* 
-.header .nav .nav-links li:not(:last-of-type) {
-    margin-right: 90px;
+    color: var(--purple-2);
 }
 
 /** Main */
-
 /*? INTRODUCTION COMPLETE  */
 /* TODO FALTA RESPONSIVE */
 
@@ -128,7 +119,6 @@ body {
     justify-content: space-between;
     margin-top: 180px;
 }
-
 
 .above__p {
     font-weight: 520;
@@ -141,12 +131,9 @@ body {
     display: inline-block;
 }
 
-
 .above__p:hover {
-    color: #7e74f1;
-    cursor: none;
+    color: var(--purple);
 }
-
 
 .tittle__h1 {
     padding-left: 32px;
@@ -159,7 +146,7 @@ body {
 }
 
 .introduction-name__span--color {
-    color: #7e74f1
+    color: var(--purple);
 }
 
 .introduction-name__p2 {
@@ -182,12 +169,12 @@ body {
 
 .icons__a {
     font-size: 1.2em;
-    color: #ffffff;
+    color: var(--white);
     text-shadow: 1.4px 1px 1px #000;
 }
 
 .icons__a i:hover {
-    color: #7D73EF
+    color: var(--purple-2);
 }
 
 .introduction__cover {
@@ -206,9 +193,6 @@ body {
     position: relative;
     bottom: .3vw;
 }
-
-
-
 
 /*? Services COMPLETE  */
 /* TODO FALTA RESPONSIVE */
@@ -237,11 +221,9 @@ body {
     text-shadow: .5px 1px 1px #000;
 }
 
-
 .services .above__p {
     padding-left: 4.3rem;
 }
-
 
 .services__items {
     display: flex;
@@ -263,7 +245,6 @@ body {
     -o-border-radius: 10px;
 }
 
-
 .services__item-i {
     width: 56px;
     height: 56px;
@@ -279,7 +260,7 @@ body {
 }
 
 .services__item-i i {
-    color: #7D73EF;
+    color: var(--purple-2);
     font-size: 20px;
 }
 
@@ -295,7 +276,6 @@ body {
     letter-spacing: .1px;
 }
 
-
 /*? Portfolio - HECHO  */
 /* todo falta responsive */
 
@@ -307,7 +287,6 @@ body {
 .portfolio .container {
     margin: 0 auto;
 }
-
 
 .portfolio .above__p {
     padding-left: 4.5rem;
@@ -322,12 +301,6 @@ body {
     display: flex;
     justify-content: space-around;
 }
-
-/* .portfolio-websites{
-}
-
-.portfolio-images {
-} */
 
 .portfolio-image__image {
     width: 350px;
@@ -354,7 +327,7 @@ body {
 
 .portfolio-buttom__span {
     padding: 8px;
-    background: #282d3f;
+    background: var(--background-strong);
     border-color: #35394a;
     box-shadow: 1px 1px 20px rgb(0 0 0 / 2%);
     border: 2px solid #f5f5f528;
@@ -373,18 +346,15 @@ body {
 }
 
 .portfolio-link__a i:hover {
-    color: #7D73EF;
+    color: var(--purple-2);
 }
 
-
 /* ? EXPERIENCE JOB */
-
 
 .experience {
     padding: 130px 0 184px;
     margin: 50px 0px 50px 0px;
 }
-
 
 .experience .container {
     display: flex;
@@ -395,19 +365,9 @@ body {
     max-width: 26rem;
 }
 
-/* .experience .content {
-}
-
-.experience .above__p {
-}
- */
-
 .experience .tittle__h4 {
     font-size: 35px;
 }
-
-/* .experience-jobs{
-} */
 
 .experience-jobs__ul {
     margin-top: 50px;
@@ -431,9 +391,6 @@ body {
     cursor: pointer;
 }
 
-/* experience-job__li-btn {
-} */
-
 .experience-jobs__li--color {
     background-color: #5549db60;
     border-color: #5549db;
@@ -451,9 +408,6 @@ body {
     width: 100%;
     margin: 16px 0 28px;
 }
-
-
-
 
 .experience__aside-right {
     margin-top: 3rem;
@@ -487,10 +441,6 @@ body {
     font-weight: bold;
 }
 
-/* .experience-job__ul{
-
-} */
-
 .experience-job__li-btn {
     display: inline-block;
     padding: 2px 4px 1px 4px;
@@ -504,7 +454,6 @@ body {
     border-color: #5549db79 transparent;
     border-style: double;
     border-width: 1px;
-
 }
 
 
@@ -512,9 +461,7 @@ body {
     text-align: justify;
 }
 
-/* .experience-information__ul{
 
-} */
 
 .experience-information__li {
     padding: 5px;
@@ -527,12 +474,8 @@ body {
     font-size: .9rem;
 }
 
-
-
 /*? Education - COMPLETE */
 /*  TODO RESPONSIVE */
-
-/* .skills {} */
 
 .skill-wrapper {
     display: flex;
@@ -544,15 +487,9 @@ body {
     margin: 40px 0px 130px 0px;
 }
 
-/* .skills .container {
-}
- */
 .skills .tittle__h4 {
     font-size: 35px;
 }
-
-/* .education-information{
-} */
 
 .education-items {
     padding-top: 12px;
@@ -577,8 +514,6 @@ body {
     line-height: 20px;
     padding-bottom: 6px;
     text-shadow: .5px 1px 1px #000;
-
-
 }
 
 .education-rol__p {
@@ -599,8 +534,6 @@ body {
     font-style: oblique;
 }
 
-/* .education-aboutme{     
-} */
 
 .education-aboutme__p {
     font-size: 15px;
@@ -608,7 +541,7 @@ body {
     padding: 15px 0px 15px 25px;
     border: dashed;
     border-width: 1px;
-    border-color: #7e74f1;
+    border-color: var(--purple);
     max-width: 420px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -616,8 +549,6 @@ body {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-
-
 
 /*? Skills - COMPLETE */
 /* TODO RESPONSIVE */
@@ -627,8 +558,6 @@ body {
     justify-content: space-around;
     padding: 0px 0px 40px;
     margin: 40px 0px 130px 0px;
-
-
 }
 
 .skills-card {
@@ -651,19 +580,13 @@ body {
 
 .skills-card2 {
     position: absolute;
-
 }
-
 
 .skills__h3 {
     font-size: 18px;
     font-style: oblique;
 }
 
-/* .skill__item {}
-
-.skill-technology {}
- */
 .skill__p {
     font-size: 14px;
     padding-top: 10px;
@@ -697,7 +620,6 @@ body {
     -webkit-animation: skills-bar-fill 2s ease-in-out forwards;
 }
 
-
 /* react */
 .skill__bar--40::after {
     --skills-bar-length: 40%;
@@ -707,7 +629,6 @@ body {
 .skill__bar--60::after {
     --skills-bar-length: 60%;
 }
-
 
 /* sass - boostrap */
 .skill__bar--55::after {
@@ -720,26 +641,22 @@ body {
     --skills-bar-length: 65%;
 }
 
-
-
 /* figma */
 .skill__bar--45::after {
     --skills-bar-length: 45%;
 }
-
 
 /* github - html css*/
 .skill__bar--75::after {
     --skills-bar-length: 75%;
 }
 
-
 /* soft Skills */
 .skill__bar--91::after {
     --skills-bar-length: 91%;
 }
 
-
+/* this keyframe corresponds to the animation of the skills bar, in the right section: skills */
 @keyframes skills-bar-fill {
     to {
         transform: translateX(var(--skills-bar-length));
@@ -750,10 +667,7 @@ body {
     }
 }
 
-
 /*? Contact form */
-
-
 .contact {
     padding: 100px 0 134px;
     align-items: center;
@@ -762,12 +676,7 @@ body {
 .contact .container {
     display: flex;
     align-items: center;
-
 }
-
-/* .contact-forms {
-    
-} */
 
 .contact__form {
     margin-right: 30rem;
@@ -775,12 +684,7 @@ body {
     max-width: 600px;
 }
 
-/* .contact-item {
-    
-} */
-
 .contact-item__input {
-
     box-shadow: none;
     border: none;
     outline: none;
@@ -793,9 +697,7 @@ body {
     padding: 30px;
     margin-top: 20px;
     width: 100%;
-
 }
-
 
 .contact-item__textarea {
     background-color: #33394d;
@@ -836,14 +738,10 @@ body {
     width: 100%;
 }
 
-
-
-
 /* right */
 
 .contact-info {
     margin-left: 7rem;
-    
 }
 
 .contact-container {
@@ -851,7 +749,6 @@ body {
     margin-bottom: 40px;
     align-items: center;
 }
-
 
 .contact-icons {
     text-align: center;
@@ -861,22 +758,17 @@ body {
     border-radius: 16px;
     height: 60px;
     width: 60px;
-
 }
 
 .contact-icons i {
-    color: #7E74F1;
+    color: var(--purple);
 }
-
-/* .contact-text {
-} */
 
 .contact-text__h4 {
     font-weight: 500;
     font-size: 18px;
     line-height: 19px;
     text-decoration: double;
-
 }
 
 .contact-text__p {
@@ -886,12 +778,9 @@ body {
     line-height: 24px;
 }
 
-
-
 /**! Footer  COMPLETADO */
-
 footer {
-    background-color: #282D3F;
+    background-color: var(--background-strong);
     text-align: center;
     padding: 40px;
 }
@@ -903,10 +792,6 @@ footer {
 
 }
 
-/* .footer .icons__li {
-
-} */
-
 .footer-copyright__p {
     margin-left: 1.7rem;
 }
@@ -917,47 +802,17 @@ footer {
 
 .footer-copyright__span--color:hover {
     font-weight: bold;
-    color: #7D73EF;
+    color: var(--purple-2);
 }
-
-/** Sections  */
-
-#intro-id {
-    background-color: #282D3F;
-}
-
-#services-id {
-    background-color: #2D3346;
-}
-
-
-#portfolio-id {
-    background-color: #282D3F;
-}
-
-#experience-id {
-    background-color: #2D3346;
-}
-
-#skills-id {
-    background-color: #282D3F;
-}
-
-#contact-id {
-    background-color: #2D3346;
-}
-
 
 /** Breakpoints  */
 
-
-
 /*? Computer | Display  */
-
-
 
 /*? Tablet & Laptop | Display  */
 
-
-
 /*? Mobile | Display  */
+
+@media screen {
+    
+}
