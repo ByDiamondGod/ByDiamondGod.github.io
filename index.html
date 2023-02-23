@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ar">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio Oficial Eduardo Danderfer Full-Stack Engineer">
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Portfolio Oficial Eduardo Danderfer Full-Stack Engineer" />
+  <meta name="robots" content="index, follow" />
   <meta name="keywords"
-    content="Portfolio Front-Ebd Developer, Portfolio Full-Stack Developer, Eduardo Danderfer, ByDiamondGod, Full-Stack Engineer">
-  <meta name="author" content="Eduardo Danderfer">
-  <meta name="copyright" content="Eddev Corp.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
-  <link rel="icon" href="img/diamond.png">
-  <link rel="stylesheet" href="css/optimize.css">
+    content="Portfolio Front-Ebd Developer, Portfolio Full-Stack Developer, Eduardo Danderfer, ByDiamondGod, Full-Stack Engineer" />
+  <meta name="author" content="Eduardo Danderfer" />
+  <meta name="copyright" content="Eddev Corp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="img/diamond.png" />
+  <link rel="stylesheet" href="css/optimize.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <title>Eddev</title>
 </head>
@@ -29,16 +29,34 @@
           <img src="/img/logo-purple.png" alt="logo-image-eddev" />
         </a>
       </div>
-      <nav class="header__nav">
+
+      <label for="header-menu" class="header__nav-label">
+        <img src="img/menu-icon.png" alt="logo-image-menu" class="header__nav-img">
+      </label>
+      <input type="checkbox" id="header-menu" class="header__nav-input">
+
+      <nav class="header__nav active">
         <ul class="header__ul">
-          <li class="header__li"><a href="#services-id" class="header__a">Especialidad</a></li>
-          <li class="header__li"><a href="#portfolio-id" class="header__a">Proyectos</a></li>
-          <li class="header__li"> <a href="#experience-id" class="header__a">Experiencia</a></li>
-          <li class="header__li"><a href="#skills-id" class="header__a">Educacion</a></li>
-          <li class="header__li"><a href="#contact-id" class="header__a">Contacto</a></li>
+          <li class="header__li">
+            <a href="#services-id" class="header__a">Especialidad</a>
+          </li>
+          <li class="header__li">
+            <a href="#portfolio-id" class="header__a">Proyectos</a>
+          </li>
+          <li class="header__li">
+            <a href="#experience-id" class="header__a">Experiencia</a>
+          </li>
+          <li class="header__li">
+            <a href="#skills-id" class="header__a">Educacion</a>
+          </li>
+          <li class="header__li">
+            <a href="#contact-id" class="header__a">Contacto</a>
+          </li>
         </ul>
       </nav>
-      <div><i class="fa-regular fa-lightbulb"></i></div>
+      <div class="header-light">
+        <i class="fa-regular fa-lightbulb"></i>
+      </div>
     </div>
   </header>
   <!--?       INTRODUCTION - COMPLETE        -->
@@ -49,33 +67,39 @@
         <div class="content">
           <p class="above__p">~Mi nombre es</p>
           <h1 class="tittle__h1">
-            Eduardo<span class="introduction-name__span--color"> Danderfer.</span>
+            Eduardo<span class="introduction-name__span--color">
+              Danderfer.</span>
           </h1>
           <p class="introduction-name__p2">
             Desarrollador Full-Stack. Preparado para iniciar en el mundo IT.
-            En busqueda constante de nuevos desafios y aprendizajes. Apasionado por diseños innovadores y nuevas
-            tecnologías.
+            En busqueda constante de nuevos desafios y aprendizajes.
+            Apasionado por diseños innovadores y nuevas tecnologías.
           </p>
           <ul class="icons__ul">
             <li class="icons__li">
-              <a href="https://www.instagram.com/eduardodanderfer/" class="icons__a" target="_blank"> <i
-                  class="fa-brands fa-instagram"></i> </a>
+              <a href="https://www.instagram.com/eduardodanderfer/" class="icons__a" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </li>
             <li class="icons__li">
-              <a href="https://github.com/ByDiamondGod" class="icons__a" target="_blank"> <i
-                  class="fa-brands fa-github"> </i> </a>
+              <a href="https://github.com/ByDiamondGod" class="icons__a" target="_blank">
+                <i class="fa-brands fa-github"> </i>
+              </a>
             </li>
             <li class="icons__li">
               <a href="https://www.linkedin.com/in/eduardo-danderfer-77847b224/?original_referer=" class="icons__a"
-                target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
             </li>
             <li class="icons__li">
-              <a href="#" class="icons__a" target="_blank"> <i class="fa-regular fa-user"> </i> </a>
+              <a href="#" class="icons__a" target="_blank">
+                <i class="fa-regular fa-user"> </i>
+              </a>
             </li>
           </ul>
         </div>
         <div class="introduction-photo">
-          <div class="introduction__cover"></div>
           <img class="introduction__image" src="img/me-bkg.png" alt="profile-image-eddev" />
         </div>
       </div>
@@ -97,8 +121,9 @@
             </div>
             <h4 class="services__h4">Diseño UX/UI</h4>
             <p class="services__p">
-              Convierto lo que tienes en mente, en un producto digital, siguiendo patrones de diseño para facilitar y
-              satisfacer el uso de cualquier usuario
+              Convierto lo que tienes en mente, en un producto digital,
+              siguiendo patrones de diseño para facilitar y satisfacer el uso
+              de cualquier usuario
             </p>
           </div>
           <div class="services__item">
@@ -107,8 +132,9 @@
             </div>
             <h4 class="services__h4">Responsive Desing</h4>
             <p class="services__p">
-              Adaptado para ver en todas las pantallas de los dispositivos que se esté utilizando, desde computadoras
-              hasta celulares, tablets y televisores
+              Adaptado para ver en todas las pantallas de los dispositivos que
+              se esté utilizando, desde computadoras hasta celulares, tablets
+              y televisores
             </p>
           </div>
           <div class="services__item">
@@ -118,7 +144,8 @@
             <h4 class="services__h4">Desarrollo Moderno</h4>
             <p class="services__p">
               Creación y mantenimiento de sitios web. Optimizando el
-              rendimiento y velocidad de carga, posicionandolo con SEO, para mayor visualizacion en tu pagina
+              rendimiento y velocidad de carga, posicionandolo con SEO, para
+              mayor visualizacion en tu pagina
             </p>
           </div>
         </div>
@@ -140,8 +167,12 @@
               <img class="portfolio-image__image" src="img/ecommerce-shop.png" alt="ecommerce__image" />
             </div>
             <div class="portfolio-detail">
-              <h5 class="portfolio-detail__h5">E-commerce <a class="portfolio-link__a" href="#"> <i
-                    class="fa-solid fa-link"></i> </a></h5>
+              <h5 class="portfolio-detail__h5">
+                E-commerce
+                <a class="portfolio-link__a" href="#">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </h5>
               <div class="portfolio-buttom">
                 <span class="portfolio-buttom__span">React</span>
                 <span class="portfolio-buttom__span">NodeJS</span>
@@ -154,8 +185,12 @@
               <img class="portfolio-image__image" src="img/clothes-shop2.png" alt="shop__img" />
             </div>
             <div class="portfolio-detail">
-              <h5 class="portfolio-detail__h5">Shopping <a class="portfolio-link__a" href="#"> <i
-                    class="fa-solid fa-link"></i> </a></h5>
+              <h5 class="portfolio-detail__h5">
+                Shopping
+                <a class="portfolio-link__a" href="#">
+                  <i class="fa-solid fa-link"></i>
+                </a>
+              </h5>
               <div class="portfolio-buttom">
                 <span class="portfolio-buttom__span">Sass</span>
                 <span class="portfolio-buttom__span">Boostrap</span>
@@ -177,9 +212,11 @@
           </div>
           <div class="experience-jobs">
             <ul class="experience-jobs__ul">
-              <li class="experience-jobs__li experience-jobs__li--color">Bigolive · Businnes </li>
-              <li class="experience-jobs__li">Kuaishou · Technology </li>
-              <li class="experience-jobs__li">NimoTV · Company </li>
+              <li class="experience-jobs__li experience-jobs__li--color">
+                Bigolive · Businnes
+              </li>
+              <li class="experience-jobs__li">Kuaishou · Technology</li>
+              <li class="experience-jobs__li">NimoTV · Company</li>
               <li class="experience-jobs__li">Nonolive · Corp</li>
             </ul>
           </div>
@@ -196,24 +233,30 @@
               <li class="experience-job__li-btn">Ionic</li>
             </ul>
           </div>
-          <div class="experience__line">
-          </div>
+          <div class="experience__line"></div>
           <div class="experience-information">
             <ul class="experience-information__ul">
-              <li class="experience-information__li"> <span class="experience-information__span"> ~ </span> Diseño y
-                maquetado web de los servicios de la empresa</li>
-              <li class="experience-information__li"><span class="experience-information__span"> ~ </span> Mantenimiento
-                y optimización de servicios</li>
-              <li class="experience-information__li"><span class="experience-information__span"> ~ </span> Consumo de
-                las distintas Api's para acoplar servicios</li>
-              <li class="experience-information__li"><span class="experience-information__span"> ~ </span> Estrategias
-                de: SEO ⌯ UX/UI ⌯ Technical Writing</li>
+              <li class="experience-information__li">
+                <span class="experience-information__span"> ~ </span>
+                Diseño y maquetado web de los servicios de la empresa
+              </li>
+              <li class="experience-information__li">
+                <span class="experience-information__span"> ~ </span>
+                Mantenimiento y optimización de servicios
+              </li>
+              <li class="experience-information__li">
+                <span class="experience-information__span"> ~ </span>
+                Consumo de las distintas Api's para acoplar servicios
+              </li>
+              <li class="experience-information__li">
+                <span class="experience-information__span"> ~ </span>
+                Estrategias de: SEO ⌯ UX/UI ⌯ Technical Writing
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-
 
     <!--?      SKILLS  - COMPLETE        -->
     <!-- TODO falta responsive -->
@@ -236,78 +279,80 @@
               <p class="education-date__p">2023 - 2024</p>
             </div>
             <div class="education-items">
-              <h4 class="education-university__h4">Carrera Full-Stack DigitalHouse</h4>
+              <h4 class="education-university__h4">
+                Carrera Full-Stack DigitalHouse
+              </h4>
               <p class="education-rol__p">Certified Tech Developer</p>
               <p class="education-date__p">2021 - 2022</p>
             </div>
             <div class="education-items">
-              <h4 class="education-university__h4">Secundaria Completa ESO</h4>
-              <p class="education-rol__p"> Tecnología de la información </p>
+              <h4 class="education-university__h4">
+                Secundaria Completa ESO
+              </h4>
+              <p class="education-rol__p">Tecnología de la información</p>
               <p class="education-date__p">2016 - 2020</p>
             </div>
           </div>
           <!-- right -->
           <div class="skill-column">
             <div class="skills-card">
-              <h3 class="skills__h3"> Especialidad </h3>
+              <h3 class="skills__h3">Especialidad</h3>
               <div class="skills__item">
                 <div class="skill-technology">
-                  <p class="skill__p"> HTML ~ CSS </p>
-                  <div class="skill__bar skill__bar--75"> </div>
+                  <p class="skill__p">HTML ~ CSS</p>
+                  <div class="skill__bar skill__bar--75"></div>
                 </div>
               </div>
               <div class="skills__item">
                 <div class="skill-technology">
-                  <p class="skill__p"> Sass ~ Boostrap</p>
-                  <div class="skill__bar skill__bar--65"> </div>
+                  <p class="skill__p">Sass ~ Boostrap</p>
+                  <div class="skill__bar skill__bar--65"></div>
                 </div>
               </div>
               <div class="skills__item">
                 <div class="skill-technology">
-                  <p class="skill__p"> React </p>
-                  <div class="skill__bar skill__bar--40"> </div>
+                  <p class="skill__p">React</p>
+                  <div class="skill__bar skill__bar--40"></div>
                 </div>
               </div>
               <div class="skills__item">
                 <div class="skill-technology">
-                  <p class="skill__p"> Javascript</p>
-                  <div class="skill__bar skill__bar--55"> </div>
+                  <p class="skill__p">Javascript</p>
+                  <div class="skill__bar skill__bar--55"></div>
                 </div>
               </div>
               <div class="skills-card skills-card2">
-                <h3 class="skills__h3"> Dominando </h3>
+                <h3 class="skills__h3">Dominando</h3>
                 <div class="skills__item">
                   <div class="skill-technology">
-                    <p class="skill__p"> Photoshop ~ Figma </p>
-                    <div class="skill__bar skill__bar--65"> </div>
+                    <p class="skill__p">Photoshop ~ Figma</p>
+                    <div class="skill__bar skill__bar--65"></div>
                   </div>
                 </div>
                 <div class="skills__item">
                   <div class="skill-technology">
-                    <p class="skill__p"> Ingles </p>
-                    <div class="skill__bar skill__bar--45"> </div>
+                    <p class="skill__p">Ingles</p>
+                    <div class="skill__bar skill__bar--45"></div>
                   </div>
                 </div>
                 <div class="skills__item">
                   <div class="skill-technology">
-                    <p class="skill__p"> UX / UI ~ SCRUM </p>
-                    <div class="skill__bar skill__bar--75"> </div>
+                    <p class="skill__p">UX / UI ~ SCRUM</p>
+                    <div class="skill__bar skill__bar--75"></div>
                   </div>
                 </div>
                 <div class="skills__item">
                   <div class="skill-technology">
-                    <p class="skill__p"> Habilidades Blandas</p>
-                    <div class="skill__bar skill__bar--91"> </div>
+                    <p class="skill__p">Habilidades Blandas</p>
+                    <div class="skill__bar skill__bar--91"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
-
 
     <!--?       CONTACT  - COMPLETE         -->
     <!-- TODO Responsive -->
@@ -342,8 +387,8 @@
               <i class="fa-solid fa-map-pin"></i>
             </div>
             <div class="contact-text">
-              <h4 class="contact-text__h4"> Direccion </h4>
-              <p class="contact-text__p"> Argentina, Buenos Aires</p>
+              <h4 class="contact-text__h4">Direccion</h4>
+              <p class="contact-text__p">Argentina, Buenos Aires</p>
             </div>
           </div>
           <div class="contact-container">
@@ -351,8 +396,8 @@
               <i class="fa-solid fa-phone-volume"></i>
             </div>
             <div class="contact-text">
-              <h4 class="contact-text__h4"> Teléfono </h4>
-              <p class="contact-text__p"> (011) 15-4356-3321</p>
+              <h4 class="contact-text__h4">Teléfono</h4>
+              <p class="contact-text__p">(011) 15-4356-3321</p>
             </div>
           </div>
           <div class="contact-container">
@@ -360,8 +405,8 @@
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="contact-text">
-              <h4 class="contact-text__h4"> E-mail </h4>
-              <p class="contact-text__p"> edudanderfer@gmail.com</p>
+              <h4 class="contact-text__h4">E-mail</h4>
+              <p class="contact-text__p">edudanderfer@gmail.com</p>
             </div>
           </div>
         </div>
@@ -373,28 +418,36 @@
   <footer class="footer">
     <ul class="icons__ul">
       <li class="icons__li">
-        <a href="https://www.instagram.com/eduardodanderfer/" class="icons__a" target="_blank"> <i
-            class="fa-brands fa-instagram"></i> </a>
+        <a href="https://www.instagram.com/eduardodanderfer/" class="icons__a" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
       </li>
       <li class="icons__li">
-        <a href="https://github.com/ByDiamondGod" class="icons__a" target="_blank"> <i class="fa-brands fa-github">
-          </i> </a>
+        <a href="https://github.com/ByDiamondGod" class="icons__a" target="_blank">
+          <i class="fa-brands fa-github"> </i>
+        </a>
       </li>
       <li class="icons__li">
         <a href="https://www.linkedin.com/in/eduardo-danderfer-77847b224/?original_referer=" class="icons__a"
-          target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+          target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
       </li>
       <li class="icons__li">
-        <a href="#" class="icons__a" target="_blank"> <i class="fa-regular fa-user"> </i> </a>
+        <a href="#" class="icons__a" target="_blank">
+          <i class="fa-regular fa-user"> </i>
+        </a>
       </li>
     </ul>
     <p class="footer-copyright__p">
       <span class="footer-copyright__span"> © 2023 ∾ </span>
-      <span class="footer-copyright__span footer-copyright__span--color"> <a href="index.html"> Eddev </a></span>
+      <span class="footer-copyright__span footer-copyright__span--color">
+        <a href="index.html"> Eddev </a></span>
     </p>
   </footer>
 
   <script src="https://kit.fontawesome.com/8d01382b51.js" crossorigin="anonymous"></script>
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 </body>
+
 </html>
