@@ -956,6 +956,9 @@ footer {
 }
 
 @media screen and (max-width: 927px) {
+
+  /* introduction  */
+
   .content {
     justify-content: center;
   }
@@ -987,7 +990,6 @@ footer {
   }
 
   .services__p {
-    font-size: 0.9rem;
     width: 350px;
   }
 
@@ -1003,6 +1005,16 @@ footer {
   .icons__ul {
     justify-content: center;
     margin-right: 3rem;
+  }
+
+
+  /* footer */
+  .footer .icons__ul {
+    margin-right: 0;
+  }
+
+  .footer-copyright__p {
+    margin-left: 1.7rem;
   }
 }
 
