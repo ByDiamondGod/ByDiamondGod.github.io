@@ -559,10 +559,6 @@ body {
 /*? Skills - COMPLETE */
 /* TODO RESPONSIVE */
 
-.skills {
-  margin-top: 5rem;
-}
-
 .skill-column {
   display: flex;
   justify-content: space-around;
