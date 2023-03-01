@@ -1069,9 +1069,7 @@ footer {
 
   /*  introduction */
 
-  .container {
-    max-width: 100%;
-  }
+ 
 
   .introduction .container {
     margin-top: 4rem;
@@ -1124,6 +1122,11 @@ footer {
     line-height: 2.5rem;
   }
 
+  .introduction-name__p2 {
+    padding-left:1rem ;
+    padding-right:1rem ;
+  }
+
   .services__p {
     font-size: 0.9rem;
     width: auto;
@@ -1133,3 +1136,19 @@ footer {
     margin: 5rem 0 0;
   }
 }
+
+  @media screen and (max-width: 482px) {
+    .introduction-name__p2 {
+      width: 370px ;
+    }
+
+
+    }
+
+
+  @media screen and (max-width: 375px) {
+    .introduction-name__p2 {
+      width: 340px ;
+    }
+  }
+
