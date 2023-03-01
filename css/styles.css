@@ -795,7 +795,7 @@ footer {
 }
 
 .footer-copyright__p {
-  margin-left: 1.7rem;
+  margin-left: 2rem;
 }
 
 .footer-copyright__span {
@@ -1009,6 +1009,11 @@ footer {
 
 
   /* footer */
+
+  .footer {
+    margin-right: 3rem;
+  }
+  
   .footer .icons__ul {
     margin-right: 0;
   }
