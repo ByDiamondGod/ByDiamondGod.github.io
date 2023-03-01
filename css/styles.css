@@ -891,9 +891,86 @@ footer {
   display: none;
 }
 
+@media screen and (max-width: 1375px) {
+  /*! skills */
+
+  .skills .container {
+    margin-top: 4rem;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill-wrapper {
+    justify-content: start;
+  }
+
+  .education {
+    justify-items: center;
+    max-width: 500px;
+    text-align: center;
+    margin: 0;
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+
+  .skill-column {
+    margin-left: 2rem;
+  }
+
+  .skills-card {
+    margin-top: 0;
+    max-width: 400px;
+  }
+
+  .skills-card2 {
+    top: 80%;
+    left: 40%;
+  }
+
+  .experience .container {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  /*! skills */
+  .skill-wrapper {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .education {
+    justify-items: center;
+    max-width: 500px;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill-column {
+    margin-left: 0;
+    margin-right: 7rem;
+  }
+
+  .skills-card {
+    margin-top: 0;
+    max-width: 400px;
+    max-height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skills-card2 {
+    top: 80%;
+    left: 40%;
+  }
+}
+
 @media screen and (max-width: 927px) {
   /*! introduction  */
-
   .content {
     justify-content: center;
   }
@@ -954,7 +1031,6 @@ footer {
 
   /*! experience  */
 
-  
   .experience .content {
     text-align: inherit;
   }
@@ -972,7 +1048,6 @@ footer {
     margin-left: 0;
   }
 
-
   /*! footer */
 
   .footer {
@@ -989,8 +1064,8 @@ footer {
   }
 
   .experience-information {
-  text-align: center;
-}
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1133,10 +1208,9 @@ footer {
 
   .experience .content {
     text-align: center;
-  } 
+  }
 
-
-  .experience-jobs__li  {
+  .experience-jobs__li {
     justify-self: center;
     max-width: 20rem;
     margin-left: 2rem;
@@ -1144,10 +1218,25 @@ footer {
   }
 
   .experience-jobs__li--color {
-       
     max-width: 20rem;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .skill-column {
+    margin-left: 0;
+    margin-right: 9rem;
+  }
+
+  .skills-card {
+    padding: 4rem;
+    padding-top: 2.5rem;
+  }
+
+  .skills-card2 {
+    margin-top: 2.5rem;
   }
 }
 
@@ -1171,38 +1260,56 @@ footer {
   .services {
     margin: 5rem 0 0;
   }
-}
 
+  .skill-column {
+    margin-left: 1rem;
+  }
+
+  .skills-card {
+    padding: 3rem;
+  }
+}
 
 @media screen and (max-width: 482px) {
   .introduction-name__p2 {
     width: 370px;
   }
+
+  .skill-column {
+    margin-left: 2rem;
+  }
+
+  .skills-card {
+    padding: 2rem;
+  }
 }
 
-
 @media screen and (max-width: 436px) {
-
-
- .experience-job__ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .experience-job__ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .experience__aside-right {
-    padding: .9375rem;
+    padding: 0.9375rem;
   }
 
-  experience-information__li {
-    
+  .skill-column {
+    margin-left: 3rem;
   }
-  
+
+  .skills-card {
+    padding: .67rem;
+    padding-bottom: 0rem;
+    padding-top: 2rem;
+  }
+
+   .skills-card2 {
+    margin-top: 1.7rem;
+    left: 36%;
+  }
 }
-
-
-
-
 
 @media screen and (max-width: 375px) {
   .introduction-name__p2 {
