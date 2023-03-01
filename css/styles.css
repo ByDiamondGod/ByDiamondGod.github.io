@@ -279,10 +279,10 @@ body {
 }
 
 .services__p {
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.5rem;
-  letter-spacing: .0063rem;
+  letter-spacing: 0.0063rem;
 }
 
 /*? Portfolio - HECHO  */
@@ -956,7 +956,6 @@ footer {
 }
 
 @media screen and (max-width: 927px) {
-
   .content {
     justify-content: center;
   }
@@ -973,7 +972,7 @@ footer {
     padding-left: 0;
   }
 
-    .content {
+  .content {
     text-align: center;
     justify-content: center;
   }
@@ -983,12 +982,12 @@ footer {
     justify-content: space-evenly;
   }
 
-    .services__item {
+  .services__item {
     margin: 1rem;
   }
 
   .services__p {
-    font-size: .9rem;
+    font-size: 0.9rem;
     width: 350px;
   }
 
@@ -998,9 +997,14 @@ footer {
 
   .introduction__image {
     width: auto;
+    margin: 2.5rem 1rem 1rem;
+  }
+
+  .icons__ul {
+    justify-content: center;
+    margin-right: 3rem;
   }
 }
-
 
 @media screen and (max-width: 850px) {
   .header__button {
@@ -1030,16 +1034,16 @@ footer {
     border: 1px solid #35394a;
     line-height: 2rem;
     width: 150px;
-    border-radius: 0 0 .25rem .25rem;
-    -webkit-border-radius: 0 0 .25rem .25rem;
-    -moz-border-radius: 0 0 .25rem .25rem;
-    -ms-border-radius: 0 0 .25rem .25rem;
-    -o-border-radius: 0 0 .25rem .25rem;
-}
+    border-radius: 0 0 0.25rem 0.25rem;
+    -webkit-border-radius: 0 0 0.25rem 0.25rem;
+    -moz-border-radius: 0 0 0.25rem 0.25rem;
+    -ms-border-radius: 0 0 0.25rem 0.25rem;
+    -o-border-radius: 0 0 0.25rem 0.25rem;
+  }
 
   .header__li {
-    padding: .1rem;
-    margin: .1rem;
+    padding: 0.1rem;
+    margin: 0.1rem;
   }
 
   .header-light {
@@ -1048,20 +1052,18 @@ footer {
 
   /*  introduction */
 
-
   .container {
     max-width: 100%;
   }
 
   .introduction .container {
-    margin-top: 9rem;
+    margin-top: 4rem;
     flex-direction: column;
   }
 
   .services .above__p {
     padding-left: 0;
   }
-
 
   .introduction .content {
     text-align: center;
@@ -1079,21 +1081,38 @@ footer {
     text-align: center;
   }
 
-  
+  .introduction-name__p2 {
+    padding-left: 0;
+  }
 
+  .tittle__h1 {
+    padding: 0;
+  }
+
+  .introduction .above__p {
+    padding-left: 0px;
+  }
+
+  .icons__ul {
+    justify-content: center;
+    margin-right: 3rem;
+    padding: 0;
+  }
 }
 
-
 @media screen and (max-width: 535px) {
-
-    .header__ul {
+  .header__ul {
     width: 100%;
     right: 0;
     line-height: 2.5rem;
-}
+  }
 
- .services__p {
-    font-size: .9rem;
+  .services__p {
+    font-size: 0.9rem;
     width: auto;
+  }
+
+  .services {
+    margin: 5rem 0 0;
   }
 }
