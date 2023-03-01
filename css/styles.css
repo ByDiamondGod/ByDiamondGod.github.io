@@ -920,8 +920,9 @@ footer {
   }
 
   .skills-card {
-    margin-top: 0;
+    padding-top: 3rem;
     max-width: 400px;
+    margin-top: 2.3rem;
   }
 
   .skills-card2 {
