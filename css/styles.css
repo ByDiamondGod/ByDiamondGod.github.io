@@ -581,10 +581,12 @@ body {
   text-align: center;
   height: 380px;
   max-height: 450px;
+  padding-top: 3rem;
 }
 
 .skills-card2 {
   position: absolute;
+  top: 77%;
 }
 
 .skills__h3 {
@@ -920,13 +922,13 @@ footer {
   }
 
   .skills-card {
-    padding-top: 3rem;
+    margin-top: 0;
     max-width: 400px;
-    margin-top: 2.3rem;
+    margin-top: 1.5rem;
   }
 
   .skills-card2 {
-    top: 80%;
+    top: 85%;
     left: 40%;
   }
 
