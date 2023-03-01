@@ -883,9 +883,9 @@ footer {
   display: none;
 }
  */
-.skills {
+/* .skills {
   display: none;
-}
+} */
 
 .contact {
   display: none;
@@ -976,7 +976,8 @@ footer {
   /*! footer */
 
   .footer {
-    margin-right: 3rem;
+    margin-right: 20px;
+    margin-top: 1rem;
   }
 
   .footer .icons__ul {
@@ -986,6 +987,10 @@ footer {
   .footer-copyright__p {
     margin-left: 1.7rem;
   }
+
+  .experience-information {
+  text-align: center;
+}
 }
 
 @media screen and (max-width: 850px) {
