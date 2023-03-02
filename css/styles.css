@@ -879,6 +879,11 @@ footer {
   .experience .container {
     justify-content: space-evenly;
   }
+
+  .introduction .above__p {
+    margin-right: 1.5rem;
+  }
+
 }
 
 @media screen and (max-width: 1180px) {
@@ -1034,6 +1039,7 @@ footer {
 
   .footer .icons__ul {
     margin-right: 0;
+    margin-bottom: 1rem;
   }
 
   .footer-copyright__p {
@@ -1205,6 +1211,11 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .contact-info {
+        margin-left: 6rem;
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -1236,7 +1247,6 @@ footer {
   }
 
   .services__p {
-    font-size: 0.9rem;
     width: auto;
   }
 
@@ -1276,7 +1286,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 436px) {
+@media screen and (max-width: 440px) {
   .experience-job__ul {
     display: flex;
     align-items: center;
@@ -1300,6 +1310,10 @@ footer {
   .skills-card2 {
     margin-top: 1.7rem;
     left: 36%;
+  }
+
+  .introduction .above__p {
+    margin-right: .5rem;
   }
 }
 
