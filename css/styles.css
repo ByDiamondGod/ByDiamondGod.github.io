@@ -279,7 +279,7 @@ body {
 }
 
 .services__p {
-  font-size: 0.875rem;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.5rem;
   letter-spacing: 0.0063rem;
@@ -809,6 +809,7 @@ footer {
   padding: 40px;
 }
 
+
 .footer .icons__ul {
   margin-bottom: 10px;
   justify-content: center;
@@ -1055,6 +1056,7 @@ footer {
   .header__button {
     display: block;
     cursor: pointer;
+    margin-right: 1rem;
   }
 
   .header__nav {
