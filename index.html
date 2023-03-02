@@ -360,57 +360,59 @@
 
     <section class="contact" id="contact-id">
       <div class="container">
-        <div class="contact-forms">
-          <form class="contact__form" autocomplete="on">
-            <div class="contact-item">
-              <input class="contact-item__input" id="c-name" type="text" name="name" placeholder="Nombre completo"
-                required minlength="5" maxlength="50" />
+        <div class="contact-wrap">
+          <div class="contact-forms">
+            <form class="contact__form" autocomplete="on">
+              <div class="contact-item">
+                <input class="contact-item__input" id="c-name" type="text" name="name" placeholder="Nombre completo"
+                  required minlength="5" maxlength="50" />
+              </div>
+              <div class="contact-item">
+                <input class="contact-item__input" id="e-mail" type="Email" name="email" placeholder="Correo"
+                  minlength="10" maxlength="50" required />
+              </div>
+              <div class="contact-item">
+                <textarea class="contact-item__textarea" name="message" id="msg" rows="7" minlength="10" maxlength="500"
+                  required placeholder="Mensaje"></textarea>
+              </div>
+              <div class="contact-item__input-sub">
+                <button class="contact-item__input-submit">
+                  <input class="contact-item__input-submit-done" id="confirm" type="submit" placeholder="Enviar" />
+                </button>
+              </div>
+            </form>
+          </div>
+          <!--  right -->
+          <div class="contact-info">
+            <div class="contact-container">
+              <div class="contact-icons">
+                <i class="fa-solid fa-map-pin"></i>
+              </div>
+              <div class="contact-text">
+                <h4 class="contact-text__h4">Direccion</h4>
+                <p class="contact-text__p">Argentina, Buenos Aires</p>
+              </div>
             </div>
-            <div class="contact-item">
-              <input class="contact-item__input" id="e-mail" type="Email" name="email" placeholder="Correo"
-                minlength="10" maxlength="50" required />
+            <div class="contact-container">
+              <div class="contact-icons">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="contact-text">
+                <h4 class="contact-text__h4">Teléfono</h4>
+                <p class="contact-text__p">(011) 15-4356-3321</p>
+              </div>
             </div>
-            <div class="contact-item">
-              <textarea class="contact-item__textarea" name="message" id="msg" rows="7" minlength="10" maxlength="500"
-                required placeholder="Mensaje"></textarea>
-            </div>
-            <div class="contact-item__input-sub">
-              <button class="contact-item__input-submit">
-                <input class="contact-item__input-submit-done" id="confirm" type="submit" placeholder="Enviar" />
-              </button>
-            </div>
-          </form>
-        </div>
-        <!--  right -->
-        <div class="contact-info">
-          <div class="contact-container">
-            <div class="contact-icons">
-              <i class="fa-solid fa-map-pin"></i>
-            </div>
-            <div class="contact-text">
-              <h4 class="contact-text__h4">Direccion</h4>
-              <p class="contact-text__p">Argentina, Buenos Aires</p>
+            <div class="contact-container">
+              <div class="contact-icons">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4 class="contact-text__h4">E-mail</h4>
+                <p class="contact-text__p">edudanderfer@gmail.com</p>
+              </div>
             </div>
           </div>
-          <div class="contact-container">
-            <div class="contact-icons">
-              <i class="fa-solid fa-phone-volume"></i>
-            </div>
-            <div class="contact-text">
-              <h4 class="contact-text__h4">Teléfono</h4>
-              <p class="contact-text__p">(011) 15-4356-3321</p>
-            </div>
-          </div>
-          <div class="contact-container">
-            <div class="contact-icons">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-text">
-              <h4 class="contact-text__h4">E-mail</h4>
-              <p class="contact-text__p">edudanderfer@gmail.com</p>
-            </div>
-          </div>
-        </div>
+        </div class="contact-wrap">
       </div>
     </section>
   </main>

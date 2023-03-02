@@ -685,6 +685,10 @@ body {
   align-items: center;
 }
 
+.contact-wrap {
+  display: flex;
+}
+
 .contact__form {
   margin-right: 30rem;
   width: 100%;
@@ -747,7 +751,8 @@ body {
 /* right */
 
 .contact-info {
-  margin-left: 7rem;
+  margin-top: 5.3rem;
+  margin-left: 8rem;
 }
 
 .contact-container {
@@ -814,85 +819,6 @@ footer {
   visibility: hidden;
 }
 
-/** Breakpoints  */
-
-/*? Computer | Display  */
-
-/*? Tablet & Laptop | Display  */
-
-/*? Mobile | Display  */
-
-/* @media only screen and (max-width: 500px) {
-
-
-  .experience .container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .experience-jobs__ul {
-    margin: 1rem 0 3rem 0;
-    display: inline-flex;
-    flex-direction: row;
-  }
-
-  .experience-information__li {
-    font-size: 0.875rem;  
-  }
-
-  .experience .above__p {
-    padding-left: 0;
-  }
-
-  .experience .tittle__h4 {
-    margin-right: 0;
-  }
-
-  .experience__aside-right {
-    margin: 0 0 0 4rem;
-  }
-
-  .skills .container {
-    flex-wrap: wrap;
-  }
-
-  .education {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .skill-column {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-    .skill-card {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-} */
-
-/* .services {
-  display: none;
-}
- */
-/* .portfolio {
-  display: none;
-} */
-
-/* .experience {
-  display: none;
-}
- */
-/* .skills {
-  display: none;
-} */
-
-.contact {
-  display: none;
-}
 
 @media screen and (max-width: 1375px) {
   /*! skills */
@@ -976,7 +902,27 @@ footer {
     top: 80%;
     left: 40%;
   }
+
+  /*! contact */
+
+  .contact-forms {
+    margin: 1rem;
+    max-width: 600px;
+  }
+
+  .contact-info {
+    margin-left: 3.5rem;
+    margin-right: 2rem;
+  }
+  
 }
+
+@media screen and (max-width: 960px) {
+
+}
+  
+
+
 
 @media screen and (max-width: 927px) {
   /*! introduction  */
