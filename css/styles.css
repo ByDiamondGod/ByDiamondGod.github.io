@@ -20,8 +20,6 @@
   /*  outline: 1px solid #ff0000; */
 }
 
-/** Google Fonts */
-
 /** Body | Scroll */
 
 body::-webkit-scrollbar {
@@ -40,7 +38,7 @@ body {
   font-weight: 300;
 }
 
-/** Sections  */
+/**  Sections  */
 
 .introduction,
 .portfolio,
@@ -63,8 +61,7 @@ body {
   margin: 0 auto;
 }
 
-/**? Header / Completado  */
-/* TODO FALTA RESPONSIVE + MEDIAQUERY BURGER */
+/**  Header   */
 
 .header {
   padding: 15px 0;
@@ -119,8 +116,6 @@ body {
 }
 
 /** Main */
-/*? INTRODUCTION COMPLETE  */
-/* TODO FALTA RESPONSIVE */
 
 .introduction .container {
   display: flex;
@@ -203,8 +198,7 @@ body {
   bottom: 0.3vw;
 }
 
-/*? Services COMPLETE  */
-/* TODO FALTA RESPONSIVE */
+/*?  Services  */
 
 .services {
   padding: 114px 0 184px;
@@ -279,14 +273,13 @@ body {
 }
 
 .services__p {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: lighter;
   line-height: 1.5rem;
   letter-spacing: 0.0063rem;
 }
 
-/*? Portfolio - HECHO  */
-/* todo falta responsive */
+/*?  Portfolio   */
 
 .portfolio {
   padding: 114px 0 184px;
@@ -358,7 +351,7 @@ body {
   color: var(--purple-2);
 }
 
-/* ? EXPERIENCE JOB */
+/* ? EXPERIENCE  */
 
 .experience {
   padding: 130px 0 184px;
@@ -409,7 +402,7 @@ body {
   font-weight: 600;
 }
 
-/* ------ right   --------   */
+/*?  Experience right    */
 
 .experience__line {
   display: inline-block;
@@ -480,8 +473,7 @@ body {
   font-size: 0.9rem;
 }
 
-/*? Education - COMPLETE */
-/*  TODO RESPONSIVE */
+/*?  Skills - Education    */
 
 .skill-wrapper {
   display: flex;
@@ -528,7 +520,7 @@ body {
   line-height: 17px;
   padding-bottom: 20px;
   color: #7469ee;
-  text-shadow: 0.2px .4px 1px #000;
+  text-shadow: 0.2px 0.4px 1px #000;
   font-weight: bold;
   text-decoration: solid;
   letter-spacing: 0.7px;
@@ -556,8 +548,7 @@ body {
   -o-border-radius: 10px;
 }
 
-/*? Skills - COMPLETE */
-/* TODO RESPONSIVE */
+/*?  Skills  */
 
 .skill-column {
   display: flex;
@@ -643,12 +634,12 @@ body {
   --skills-bar-length: 55%;
 }
 
-/* photoshop  */
+/* figma  */
 .skill__bar--65::after {
   --skills-bar-length: 65%;
 }
 
-/* figma */
+/* ingles */
 .skill__bar--45::after {
   --skills-bar-length: 45%;
 }
@@ -674,7 +665,8 @@ body {
   }
 }
 
-/*? Contact form */
+/*? CONTACT */
+
 .contact {
   padding: 100px 0 134px;
   align-items: center;
@@ -748,7 +740,7 @@ body {
   width: 100%;
 }
 
-/* right */
+/*? Contact - right */
 
 .contact-info {
   margin-top: 5.3rem;
@@ -789,18 +781,17 @@ body {
   line-height: 24px;
 }
 
-  .contact .content {
-    text-align: center;
-  }
+.contact .content {
+  text-align: center;
+}
 
+.contact .above__p {
+  padding: 0;
+}
 
-    .contact .above__p {
-    padding: 0;
-  }
-
-      .contact .tittle__h4 {
-    padding: 0;
-  }
+.contact .tittle__h4 {
+  padding: 0;
+}
 
 /**! Footer  COMPLETADO */
 footer {
@@ -808,7 +799,6 @@ footer {
   text-align: center;
   padding: 40px;
 }
-
 
 .footer .icons__ul {
   margin-bottom: 10px;
@@ -833,13 +823,23 @@ footer {
   visibility: hidden;
 }
 
-
 @media screen and (max-width: 1375px) {
-  /*! skills */
-
+  /*! introduction */
   .introduction .container {
     justify-content: space-around;
   }
+
+  .introduction .above__p {
+    margin-right: 1.5rem;
+  }
+
+  /*! experience */
+
+  .experience .container {
+    justify-content: space-evenly;
+  }
+
+  /*! skills */
 
   .skills .container {
     margin-top: 4rem;
@@ -876,23 +876,10 @@ footer {
     top: 85%;
     left: 40%;
   }
-
-  .experience .container {
-    justify-content: space-evenly;
-  }
-
-  .introduction .above__p {
-    margin-right: 1.5rem;
-  }
-
 }
 
 @media screen and (max-width: 1180px) {
-  /*! skills */
-  .skill-wrapper {
-    justify-content: space-around;
-    flex-direction: column;
-  }
+  /*! education  */
 
   .education {
     justify-items: center;
@@ -901,6 +888,21 @@ footer {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .education .above__p {
+    padding-left: 0;
+  }
+
+    .education .tittle__h4 {
+    padding-left: 0;
+  }
+
+  /*! skills */
+
+  .skill-wrapper {
+    justify-content: space-around;
+    flex-direction: column;
   }
 
   .skill-column {
@@ -933,27 +935,25 @@ footer {
     margin-left: 3.5rem;
     margin-right: 2rem;
   }
-  
-    .contact-forms {
+
+  .contact-forms {
     width: 100%;
     max-width: 600px;
   }
-
 }
 
 @media screen and (max-width: 960px) {
+  /*! contact */
 
-    .contact-forms {
+  .contact-forms {
     width: 100%;
     max-width: 400px;
   }
 }
-  
-
-
 
 @media screen and (max-width: 927px) {
   /*! introduction  */
+
   .content {
     justify-content: center;
   }
@@ -1031,6 +1031,10 @@ footer {
     margin-left: 0;
   }
 
+  .experience-information {
+    text-align: center;
+  }
+
   /*! footer */
 
   .footer {
@@ -1046,13 +1050,11 @@ footer {
   .footer-copyright__p {
     margin-left: 1.7rem;
   }
-
-  .experience-information {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 850px) {
+  /*! header */
+
   .header__button {
     display: block;
     cursor: pointer;
@@ -1208,6 +1210,8 @@ footer {
     margin-right: 2rem;
   }
 
+  /*!  Contact */
+
   .contact-wrap {
     flex-direction: column;
     margin-left: auto;
@@ -1215,12 +1219,14 @@ footer {
   }
 
   .contact-info {
-        margin-left: 6rem;
+    margin-left: 6rem;
     margin-right: 1rem;
   }
 }
 
 @media screen and (max-width: 640px) {
+  /*!  Skills */
+
   .skill-column {
     margin-left: 0;
     margin-right: 9rem;
@@ -1237,11 +1243,15 @@ footer {
 }
 
 @media screen and (max-width: 535px) {
+  /*! Header */
+
   .header__ul {
     width: 100%;
     right: 0;
     line-height: 2.5rem;
   }
+
+  /*! Introduction */
 
   .introduction-name__p2 {
     padding-left: 1rem;
@@ -1256,6 +1266,8 @@ footer {
     margin: 5rem 0 0;
   }
 
+  /*! Skills */
+
   .skill-column {
     margin-left: 1rem;
   }
@@ -1266,9 +1278,13 @@ footer {
 }
 
 @media screen and (max-width: 482px) {
+  /*! Introduction */
+
   .introduction-name__p2 {
     width: 370px;
   }
+
+  /*! Skills */
 
   .skill-column {
     margin-left: 2rem;
@@ -1278,17 +1294,27 @@ footer {
     padding: 2rem;
   }
 
-    .contact-forms {
+  /*! Contact */
+
+  .contact-forms {
     width: 100%;
     max-width: 300px;
   }
 
-  .contact-info{
+  .contact-info {
     margin-left: 2.7rem;
   }
 }
 
 @media screen and (max-width: 440px) {
+  /*! Introduction */
+
+  .introduction .above__p {
+    margin-right: 0.5rem;
+  }
+
+  /*! Experience */
+
   .experience-job__ul {
     display: flex;
     align-items: center;
@@ -1298,6 +1324,8 @@ footer {
   .experience__aside-right {
     padding: 0.9375rem;
   }
+
+  /*! Skills */
 
   .skill-column {
     margin-left: 3rem;
@@ -1313,13 +1341,10 @@ footer {
     margin-top: 1.7rem;
     left: 36%;
   }
-
-  .introduction .above__p {
-    margin-right: .5rem;
-  }
 }
 
 @media screen and (max-width: 375px) {
+  /*! Introduction */
   .introduction-name__p2 {
     width: 340px;
   }
