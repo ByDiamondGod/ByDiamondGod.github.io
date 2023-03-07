@@ -1343,7 +1343,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   /*! Introduction */
   .introduction-name__p2 {
     width: 340px;
