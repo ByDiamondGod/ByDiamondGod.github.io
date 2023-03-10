@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/optimize.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/styles.css" />
   <title>Eddev | Full-Stack Engineer </title>
 </head>
@@ -24,26 +25,26 @@
   <!--?      HEADER       -->
   <header class="header">
     <div class="container">
-      <div class="header__logo">
+      <div class="header__logo"  data-aos-delay="10" data-aos="fade-down">
         <a href="index.html">
           <img src="/img/logo-purple.png" alt="logo-image-eddev" />
         </a>
       </div>
-      <nav class="header__nav header__nav--active">
+      <nav class="header__nav header__nav--desactive">
         <ul class="header__ul">
-          <li class="header__li">
+          <li class="header__li"  data-aos-delay="200" data-aos="fade-down">
             <a href="#services-id" class="header__a">Especialidad</a>
           </li>
-          <li class="header__li">
+          <li class="header__li"  data-aos-delay="250" data-aos="fade-down">
             <a href="#portfolio-id" class="header__a">Proyectos</a>
           </li>
-          <li class="header__li">
+          <li class="header__li"  data-aos-delay="300" data-aos="fade-down">
             <a href="#experience-id" class="header__a">Experiencia</a>
           </li>
-          <li class="header__li">
+          <li class="header__li"  data-aos-delay="350" data-aos="fade-down">
             <a href="#skills-id" class="header__a">Educacion</a>
           </li>
-          <li class="header__li">
+          <li class="header__li"  data-aos-delay="400" data-aos="fade-down">
             <a href="#contact-id" class="header__a">Contacto</a>
           </li>
         </ul>
@@ -59,7 +60,7 @@
   <main>
     <section class="introduction" id="introduction-id">
       <div class="container">
-        <div class="content">
+        <div class="content" data-aos="fade-up" data-aos-duration="5000">
           <p class="above__p">~Mi nombre es</p>
           <h1 class="tittle__h1">
             Eduardo<span class="introduction-name__span--color">
@@ -94,7 +95,7 @@
             </li>
           </ul>
         </div>
-        <div class="introduction__photo">
+        <div class="introduction__photo" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="5000">
           <img class="introduction__image" src="img/me-bkg.png" alt="profile-image-eddev" />
         </div>
       </div>
@@ -102,14 +103,14 @@
     <!--?       SERVICES        -->
     <section class="services" id="services-id">
       <div class="container">
-        <div class="container-center">
+        <div class="container-center" data-aos="slide-down">
           <div class="content">
             <p class="above__p">~Servicios</p>
             <h4 class="tittle__h4">Especialidad</h4>
           </div>
         </div>
         <div class="services__items">
-          <div class="services__item">
+          <div class="services__item" data-aos="flip-left" data-aos-duration="800">
             <div class="services__item-i">
               <i class="fa-solid fa-crown"></i>
             </div>
@@ -120,7 +121,7 @@
               de cualquier usuario
             </p>
           </div>
-          <div class="services__item">
+          <div class="services__item" data-aos="flip-right" data-aos-duration="800">
             <div class="services__item-i">
               <i class="fa-solid fa-bolt-lightning"></i>
             </div>
@@ -131,7 +132,7 @@
               y televisores 4K
             </p>
           </div>
-          <div class="services__item">
+          <div class="services__item" data-aos="flip-left" data-aos-duration="800">
             <div class="services__item-i">
               <i class="fa-solid fa-globe"></i>
             </div>
@@ -148,14 +149,14 @@
     <!--?      PORTFOLIO      -->
     <section class="portfolio" id="portfolio-id">
       <div class="container">
-        <div class="container-center">
+        <div class="container-center" data-aos="slide-down">
           <div class="content">
             <p class="above__p">~Proyectos</p>
             <h4 class="tittle__h4">Completados</h4>
           </div>
         </div>
         <div class="portfolio-web">
-          <article class="portfolio-websites">
+          <article class="portfolio-websites" data-aos="fade-down" data-aos-duration="600">
             <div class="portfolio-images">
               <img class="portfolio-image__image" src="img/ecommerce-shop.png" alt="ecommerce__image" />
             </div>
@@ -173,7 +174,7 @@
               </div>
             </div>
           </article>
-          <article class="portfolio-websites" id="web2">
+          <article class="portfolio-websites" id="web2" data-aos="fade-down" data-aos-duration="800">
             <div class="portfolio-images">
               <img class="portfolio-image__image" src="img/clothes-shop2.png" alt="shop__img" />
             </div>
@@ -197,7 +198,7 @@
     <!--?        EXPERIENCE JOB      -->
     <section class="experience" id="experience-id">
       <div class="container">
-        <div class="experience__aside-left">
+        <div class="experience__aside-left" data-aos="fade-down" data-aos-duration="700">
           <div class="content">
             <p class="above__p">~Carrera laboral</p>
             <h4 class="tittle__h4">Experiencia de Trabajo</h4>
@@ -213,7 +214,7 @@
             </ul>
           </div>
         </div>
-        <div class="experience__aside-right">
+        <div class="experience__aside-right" data-aos="zoom-in" data-aos-duration="700">
           <div class="experience-job">
             <h4 class="experience-job__h4">Front-End Jr.</h4>
             <p class="experience-job__p-location">En remoto » Singapur</p>
@@ -254,27 +255,27 @@
       <div class="container">
         <div class="skill-wrapper">
           <div class="education">
-            <div class="education-information">
+            <div class="education-information" data-aos="slide-down" data-aos-duration="700">
               <div class="content">
                 <p class="above__p">~Carrera educacional</p>
                 <h4 class="tittle__h4">Formacion & Habilidades</h4>
               </div>
             </div>
-            <div class="education-items">
+            <div class="education-items" data-aos="slide-up" data-aos-duration="800">
               <h4 class="education-university__h4">
                 Bootcamp Formación Profesional EducacionIT
               </h4>
               <p class="education-rol__p">Full-Stack Engineer</p>
               <p class="education-date__p">2023 - 2024</p>
             </div>
-            <div class="education-items">
+            <div class="education-items" data-aos="slide-up" data-aos-duration="1000">
               <h4 class="education-university__h4">
                 Carrera Full-Stack DigitalHouse
               </h4>
               <p class="education-rol__p">Certified Tech Developer</p>
               <p class="education-date__p">2021 - 2022</p>
             </div>
-            <div class="education-items">
+            <div class="education-items" data-aos="slide-up" data-aos-duration="1000">
               <h4 class="education-university__h4">
                 Secundaria Completa ESO
               </h4>
@@ -283,7 +284,7 @@
             </div>
           </div>
           <!--? Skills right -->
-          <div class="skill-column">
+          <div class="skill-column" data-aos="fade-up" data-aos-duration="800">
             <div class="skills-card">
               <h3 class="skills__h3">Especialidad</h3>
               <div class="skills__item">
@@ -344,13 +345,13 @@
     </section>
     <!--?       CONTACT         -->
     <section class="contact" id="contact-id">
-      <div class="content">
+      <div class="content" data-aos="fade-down" data-aos-duration="700">
         <p class="above__p">~Informacion</p>
         <h4 class="tittle__h4">Contactame </h4>
       </div>
       <div class="container">
         <div class="contact-wrap">
-          <div class="contact-forms">
+          <div class="contact-forms" data-aos="fade-up" data-aos-duration="700">
             <form class="contact__form" autocomplete="on">
               <div class="contact-item">
                 <input class="contact-item__input" id="c-name" type="text" name="name" placeholder="Nombre completo"
@@ -372,7 +373,7 @@
             </form>
           </div>
           <!--?  right -->
-          <div class="contact-info">
+          <div class="contact-info" data-aos="fade-up" data-aos-duration="700">
             <div class="contact-container">
               <div class="contact-icons">
                 <i class="fa-solid fa-map-pin"></i>
@@ -438,6 +439,13 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/8d01382b51.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 230,
+      duration: 1000,
+    });
+  </script>
   <script src="scripts/script.js"></script>
 </body>
 

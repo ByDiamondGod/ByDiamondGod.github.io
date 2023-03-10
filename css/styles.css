@@ -44,6 +44,7 @@ body {
   font-weight: 300;
 }
 
+
 /**  Sections  */
 
 .introduction,
@@ -1159,12 +1160,12 @@ footer {
   .header__nav {
     width: 100%;
     display: block;
-    /** desaparece la hamburgesa */
+    /** se despliega el menu de la burger */
   }
 
-  .header__nav--active {
+  .header__nav--desactive {
     display: none;
-    /** aparece la hamburgesa */
+    /** se cierra el menu de la burger */
   }
 
   .header__ul {
@@ -1197,7 +1198,7 @@ footer {
   /*!  introduction */
 
   .introduction .container {
-    margin-top: 4rem;
+    margin-top: 7rem;
     flex-direction: column;
   }
 
