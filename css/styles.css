@@ -280,7 +280,7 @@ body {
 
 .services__p {
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 1.5rem;
   letter-spacing: 0.0063rem;
 }
@@ -1155,6 +1155,10 @@ footer {
   -ms-transform: rotate(-45deg) translate(35px, 35px);
   -o-transform: rotate(-45deg) translate(35px, 35px);
 }
+
+  .header__logo a img {
+    margin-left: 5px;
+  }
 
   .header__nav {
     width: 100%;
