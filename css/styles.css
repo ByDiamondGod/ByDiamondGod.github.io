@@ -723,7 +723,7 @@ body {
   padding: 30px;
 }
 
-.contact-item__input-submit {
+.contact-item__input-sub {
   padding: 20px;
   background-color: var(--skills-color);
   box-shadow: none;
