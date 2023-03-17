@@ -20,13 +20,11 @@
   /*  outline: 1px solid #ff0000; */
 }
 
-/** html */
+/** Body | Scroll */
 
 html {
   scroll-behavior: smooth;
 }
-
-/** Body | Scroll */
 
 body::-webkit-scrollbar {
   width: 7px;
@@ -724,7 +722,7 @@ body {
 }
 
 .contact-item__input-sub {
-  padding: 20px;
+  padding: 5px;
   background-color: var(--skills-color);
   box-shadow: none;
   border: none;
@@ -740,6 +738,7 @@ body {
 
 .contact-item__input-submit-done {
   background-color: var(--skills-color);
+  padding: 20px;
   box-shadow: none;
   border: none;
   outline: none;
