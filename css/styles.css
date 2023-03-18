@@ -42,7 +42,6 @@ body {
   font-weight: 300;
 }
 
-
 /**  Sections  */
 
 .introduction,
@@ -118,7 +117,6 @@ body {
 .header__a:hover {
   color: var(--purple-2);
 }
-
 
 /** Main */
 
@@ -219,6 +217,26 @@ body {
   justify-content: center;
 }
 
+.tittle__h2 {
+  padding-left: 1rem;
+  font-style: normal;
+  font-weight: 00;
+  font-size: 40px;
+  line-height: 70px;
+  margin: 0 0 32px;
+  text-shadow: 0.5px 1px 1px #000;
+}
+
+.tittle__h3 {
+  padding-left: 1rem;
+  font-style: normal;
+  font-weight: 00;
+  font-size: 40px;
+  line-height: 70px;
+  margin: 0 0 32px;
+  text-shadow: 0.5px 1px 1px #000;
+}
+
 .tittle__h4 {
   padding-left: 1rem;
   font-style: normal;
@@ -299,6 +317,14 @@ body {
   padding-left: 4.5rem;
 }
 
+.portfolio .tittle__h2 {
+  margin-right: 1rem;
+}
+
+.portfolio .tittle__h3 {
+  margin-right: 1rem;
+}
+
 .portfolio .tittle__h4 {
   margin-right: 1rem;
 }
@@ -370,6 +396,14 @@ body {
 
 .experience__aside-left {
   max-width: 416px;
+}
+
+.experience .tittle__h2 {
+  font-size: 35px;
+}
+
+.experience .tittle__h3 {
+  font-size: 35px;
 }
 
 .experience .tittle__h4 {
@@ -488,6 +522,14 @@ body {
 .education {
   padding: 70px 0px 40px;
   margin: 40px 0px 130px 0px;
+}
+
+.skills .tittle__h2 {
+  font-size: 35px;
+}
+
+.skills .tittle__h3 {
+  font-size: 35px;
 }
 
 .skills .tittle__h4 {
@@ -795,6 +837,14 @@ body {
   padding: 0;
 }
 
+.contact .tittle__h2 {
+  padding: 0;
+}
+
+.contact .tittle__h3 {
+  padding: 0;
+}
+
 .contact .tittle__h4 {
   padding: 0;
 }
@@ -900,6 +950,14 @@ footer {
     padding-left: 0;
   }
 
+  .education .tittle__h2 {
+    padding-left: 0;
+  }
+
+  .education .tittle__h3 {
+    padding-left: 0;
+  }
+
   .education .tittle__h4 {
     padding-left: 0;
   }
@@ -972,6 +1030,14 @@ footer {
     padding-left: 0;
   }
 
+  .tittle__h2 {
+    padding-left: 0;
+  }
+
+  .tittle__h3 {
+    padding-left: 0;
+  }
+
   .tittle__h4 {
     padding-left: 0;
   }
@@ -1012,6 +1078,14 @@ footer {
 
   .portfolio .above__p {
     padding-left: 0;
+  }
+
+  .portfolio .tittle__h2 {
+    margin-right: 0;
+  }
+
+  .portfolio .tittle__h3 {
+    margin-right: 0;
   }
 
   .portfolio .tittle__h4 {
@@ -1061,100 +1135,100 @@ footer {
 @media screen and (max-width: 850px) {
   /*! header */
 
-.menu-btn {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  /* border: 1px solid white; */
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
-.menu-btn__burger {
-  width: 30px;
-  height: 3px;
-  background: #dddddd;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
+  .menu-btn {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    /* border: 1px solid white; */
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger {
+    width: 30px;
+    height: 3px;
+    background: #dddddd;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
 
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #dddddd;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
 
-.menu-btn__burger::before, .menu-btn__burger::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background: #dddddd;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+  }
 
-.menu-btn__burger::before {
-  transform: translateY(-10px);
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
-}
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
 
-.menu-btn__burger::after {
-  transform: translateY(10px);
-  -webkit-transform: translateY(10px);
-  -moz-transform: translateY(10px);
-  -ms-transform: translateY(10px);
-  -o-transform: translateY(10px);
-}
+  /** animation menu */
 
-/** animation menu */
+  .menu-btn.open .menu-btn__burger {
+    background: transparent;
+    box-shadow: none;
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+  }
 
-.menu-btn.open .menu-btn__burger {
-  background: transparent;
-  box-shadow: none;
-  transform: translateX(-50px);
-  -webkit-transform: translateX(-50px);
-  -moz-transform: translateX(-50px);
-  -ms-transform: translateX(-50px);
-  -o-transform: translateX(-50px);
-}
-
-.menu-btn.open .menu-btn__burger::before{
-  transform: rotate(45deg) translate(35px, -35px);
-  -webkit-transform: rotate(45deg) translate(35px, -35px);
-  -moz-transform: rotate(45deg) translate(35px, -35px);
-  -ms-transform: rotate(45deg) translate(35px, -35px);
-  -o-transform: rotate(45deg) translate(35px, -35px);
-}
-.menu-btn.open .menu-btn__burger::after{
-  transform: rotate(-45deg) translate(35px, 35px);
-  -webkit-transform: rotate(-45deg) translate(35px, 35px);
-  -moz-transform: rotate(-45deg) translate(35px, 35px);
-  -ms-transform: rotate(-45deg) translate(35px, 35px);
-  -o-transform: rotate(-45deg) translate(35px, 35px);
-}
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    -webkit-transform: rotate(45deg) translate(35px, -35px);
+    -moz-transform: rotate(45deg) translate(35px, -35px);
+    -ms-transform: rotate(45deg) translate(35px, -35px);
+    -o-transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    -webkit-transform: rotate(-45deg) translate(35px, 35px);
+    -moz-transform: rotate(-45deg) translate(35px, 35px);
+    -ms-transform: rotate(-45deg) translate(35px, 35px);
+    -o-transform: rotate(-45deg) translate(35px, 35px);
+  }
 
   .header__nav {
     width: 100%;
@@ -1248,6 +1322,16 @@ footer {
 
   .portfolio .above__p {
     padding-left: 0;
+  }
+
+  .portfolio .tittle__h2 {
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .portfolio .tittle__h3 {
+    padding-left: 0;
+    margin-right: 0;
   }
 
   .portfolio .tittle__h4 {
