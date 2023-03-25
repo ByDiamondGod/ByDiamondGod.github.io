@@ -34,6 +34,7 @@ body::-webkit-scrollbar-thumb {
   background: var(--purple-2);
 }
 
+/* selection color */
 ::selection{
   background: #e7e7e713;
 }
@@ -751,6 +752,7 @@ body {
   padding: 30px;
   margin-top: 20px;
   width: 100%;
+  caret-color: #7469ee; /* color text right */
 }
 
 .contact-item__textarea {
@@ -765,6 +767,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   padding: 30px;
+  caret-color: #7469ee;
 }
 
 .contact-item__input-sub {
