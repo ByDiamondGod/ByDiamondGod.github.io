@@ -20,3 +20,17 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
+// Obtener todos los enlaces dentro del elemento "nav"
+const links = document.querySelectorAll("nav a");
+
+// Manejar el evento de clic en los enlaces
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // Evitar la acción predeterminada del enlace
+    const href = link.getAttribute("href"); // Obtener el valor del atributo "href"
+    const targetElement = document.querySelector(href); // Buscar el elemento de destino utilizando el valor del atributo "href"
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" }); // Desplazarse al elemento de destino de manera suave
+    }
+  });
+});
