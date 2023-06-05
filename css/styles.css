@@ -1273,7 +1273,7 @@ footer {
     position: absolute;
     right: 0.275rem;
     top: 6.375rem;
-    background: var(--background-strong);
+    background-color: #282d3ffc;
     border: 1px solid #35394a;
     line-height: 2rem;
     width: 150px;
@@ -1453,6 +1453,7 @@ footer {
     width: 100%;
     right: 0;
     line-height: 2.5rem;
+    background-color: #282d3ffc;
   }
 
   /*! Introduction */
@@ -1483,6 +1484,10 @@ footer {
 
 @media screen and (max-width: 482px) {
   /*! Introduction */
+
+  .introduction .container {
+    margin-top: 3rem;
+  }
 
   .introduction-name__p2 {
     width: 370px;
