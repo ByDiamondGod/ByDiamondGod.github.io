@@ -679,7 +679,7 @@ body {
 
 /* react */
 .skill__bar--40::after {
-  --skills-bar-length: 40%;
+  --skills-bar-length: 55%;
 }
 
 /* javascript */
@@ -689,12 +689,12 @@ body {
 
 /* sass - boostrap */
 .skill__bar--55::after {
-  --skills-bar-length: 55%;
+  --skills-bar-length: 60%;
 }
 
 /* figma  */
 .skill__bar--65::after {
-  --skills-bar-length: 65%;
+  --skills-bar-length: 45%;
 }
 
 /* ingles */
