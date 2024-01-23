@@ -20,3 +20,11 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
+// Genera en HTML el año actual, asi evito cambiarlo cada año.
+document.addEventListener('DOMContentLoaded', function () {
+  var year = new Date().getFullYear();
+  document.getElementById(
+      'copyright',
+  ).innerHTML = `<span class="footer-copyright__span"> © ${year} ∾ </span>
+              <span class="footer-copyright__span footer-copyright__span--color"><a href="https://www.linkedin.com/in/eduardo-danderfer/" target="_blank" rel="noreferrer"> Eddev </a></span>`;
+});
