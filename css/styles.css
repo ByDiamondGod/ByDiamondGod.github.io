@@ -90,9 +90,9 @@ body {
   justify-content: space-between;
 }
 
-.header__logo img {
-  width: 4.7em;
-  height: auto;
+.header__logo-image {
+  width: 75px;
+  height: 61px;
   cursor: pointer;
   margin-left: 2em;
 }
@@ -208,7 +208,7 @@ body {
 }
 
 .introduction__image:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   box-shadow: 0 10px 20px #4b0458;
 }
 
@@ -440,7 +440,7 @@ body {
   border-color: var(--skills-color);
   border-style: solid;
   border-width: 1px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .experience-jobs__li--color {
