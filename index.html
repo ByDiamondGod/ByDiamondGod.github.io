@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Portfolio de Eduardo Danderfer, aplicando diseño UX/UI, Responsive Desing, Desarrollo Moderno, Technical Writing, SEO, HTML & CSS, Sass, React, JavaScript, NodeJS, Boostrap">
+    content="Portfolio de Eduardo Danderfer, aplicando diseño UX/UI, Responsive Desing, Desarrollo Moderno, Technical Writing, SEO, HTML & CSS, Sass, React, JavaScript, NodeJS, Express, MongoDB">
   <meta name="keywords"
     content="Portfolio Front-End Developer, Portfolio Full-Stack Developer, Eduardo Danderfer, ByDiamondGod, Eduardo Danderfer, Eddev Full-Stack Engineer">
   <meta name="robots" content="index, follow">
@@ -45,7 +45,8 @@
             <a href="#skills-id" class="header__a">Educacion</a>
           </li>
           <li class="header__li" data-aos-delay="400" data-aos="fade-down">
-            <a href="#contact-id" class="header__a" title="¿Hablamos? ¡Te espero! [alt+shift+Q]" accesskey="q">Contacto</a>
+            <a href="#contact-id" class="header__a" title="¿Hablamos? ¡Te espero! [alt+shift+Q]"
+              accesskey="q">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -73,23 +74,24 @@
           </p>
           <ul class="icons__ul">
             <li class="icons__li">
-              <a href="https://www.instagram.com/eduardodanderfer/" class="icons__a" target="_blank">
+              <a href="https://www.instagram.com/eduardodanderfer/" class="icons__a" target="_blank"
+                rel="noopener noreferrer">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </li>
             <li class="icons__li">
-              <a href="https://github.com/ByDiamondGod" class="icons__a" target="_blank">
+              <a href="https://github.com/ByDiamondGod" class="icons__a" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"> </i>
               </a>
             </li>
             <li class="icons__li">
               <a href="https://www.linkedin.com/in/eduardo-danderfer-77847b224/?original_referer=" class="icons__a"
-                target="_blank">
+                target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
             </li>
             <li class="icons__li">
-              <a href="https://linktr.ee/ByDiamondGod" class="icons__a" target="_blank">
+              <a href="https://linktr.ee/ByDiamondGod" class="icons__a" target="_blank" rel="noopener noreferrer">
                 <i class="fa-regular fa-user"> </i>
               </a>
             </li>
@@ -163,7 +165,8 @@
             <div class="portfolio-detail">
               <h5 class="portfolio-detail__h5">
                 E-commerce
-                <a class="portfolio-link__a" href="https://galaxyshop-eddev.netlify.app/inicio">
+                <a class="portfolio-link__a" href="https://galaxyshop-eddev.netlify.app/inicio" target="_blank"
+                  rel="noreferrer">
                   <i class="fa-solid fa-link"></i>
                 </a>
               </h5>
@@ -182,7 +185,8 @@
             <div class="portfolio-detail">
               <h5 class="portfolio-detail__h5">
                 Kinesióloga
-                <a class="portfolio-link__a" href="https://kinesiologia-eddev.netlify.app/"> <!--! Cambiar iURL -->
+                <a class="portfolio-link__a" href="https://kinesiologia-eddev.netlify.app/" target="_blank"
+                  rel="noreferrer">
                   <i class="fa-solid fa-link"></i>
                 </a>
               </h5>
@@ -227,7 +231,7 @@
               <li class="experience-job__li-btn">Videos</li>
               <li class="experience-job__li-btn">Juegos</li>
               <li class="experience-job__li-btn">eSports</li>
-            <!--   <li class="experience-job__li-btn">React</li>
+              <!--   <li class="experience-job__li-btn">React</li>
               <li class="experience-job__li-btn">Sass</li>
               <li class="experience-job__li-btn">JavaScript</li>
               <li class="experience-job__li-btn">NodeJS</li> -->
@@ -253,7 +257,7 @@
                 Mas de 200.000 seguidores totales en redes sociales
               </li>
             </ul>
-<!--             <ul class="experience-information__ul">
+            <!--             <ul class="experience-information__ul">
               <li class="experience-information__li">
                 <span class="experience-information__span"> ~ </span>
                 Diseño, maquetado y testing de páginas web
@@ -377,25 +381,22 @@
       <div class="container">
         <div class="contact-wrap">
           <div class="contact-forms" data-aos="fade-up" data-aos-duration="700">
-            <form class="contact__form" autocomplete="on"
-              action="https://formsubmit.co/9d3ac2e227e3296638d578fc59bd2042" method="POST">
+            <form class="contact__form" autocomplete="on" action="https://formspree.io/f/xqkrepor" method="POST">
               <div class="contact-item">
-                <input class="contact-item__input" id="c-name" type="text" name="name" placeholder="Nombre completo"
-                  required minlength="5" maxlength="50">
+                <input class="contact-item__input" type="text" name="text" placeholder="Nombre completo" required
+                  minlength="5" maxlength="50">
               </div>
               <div class="contact-item">
-                <input class="contact-item__input" id="e-mail" type="Email" name="email" placeholder="Correo"
-                  minlength="10" maxlength="50" required>
+                <input class="contact-item__input" type="email" name="email" placeholder="Correo" minlength="10"
+                  maxlength="50" required>
               </div>
               <div class="contact-item">
-                <textarea class="contact-item__textarea" name="message" id="msg" rows="7" minlength="10" maxlength="500"
-                  required placeholder="Mensaje"></textarea>
+                <textarea class="contact-item__textarea" name="message" rows="7" minlength="10" maxlength="500" required
+                  placeholder="Mensaje"></textarea>
               </div>
               <div class="contact-item__input-sub">
-                <input class="contact-item__input-submit-done" id="confirm" type="submit" value="Enviar">
+                <button class="contact-item__input-submit-done" type="submit">Enviar</button>
               </div>
-              <input type="hidden" name="_next" value="https://bydiamondgod.github.io/">
-              <input type="hidden" name="_captcha" value="true">
             </form>
           </div>
           <!--?  right -->
@@ -436,31 +437,33 @@
   <footer class="footer">
     <ul class="icons__ul">
       <li class="icons__li">
-        <a href="https://www.instagram.com/eduardodanderfer/" class="icons__a" target="_blank">
+        <a href="https://www.instagram.com/eduardodanderfer/" class="icons__a" target="_blank"
+          rel="noopener noreferrer">
           <i class="fa-brands fa-instagram"></i>
         </a>
       </li>
       <li class="icons__li">
-        <a href="https://github.com/ByDiamondGod" class="icons__a" target="_blank">
-          <i class="fa-brands fa-github"> </i>
+        <a href="https://github.com/ByDiamondGod" class="icons__a" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github" rel="noopener noreferrer"> </i>
         </a>
       </li>
       <li class="icons__li">
-        <a href="https://www.linkedin.com/in/eduardo-danderfer-77847b224/?original_referer=" class="icons__a"
-          target="_blank">
+        <a href="https://www.linkedin.com/in/eduardo-danderfer/" class="icons__a" target="_blank"
+          rel="noopener noreferrer">
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </li>
       <li class="icons__li">
-        <a href="https://linktr.ee/ByDiamondGod" class="icons__a" target="_blank">
+        <a href="https://linktr.ee/ByDiamondGod" class="icons__a" target="_blank" rel="noopener noreferrer">
           <i class="fa-regular fa-user"> </i>
         </a>
       </li>
     </ul>
-    <p class="footer-copyright__p">
-      <span class="footer-copyright__span"> © 2024 ∾ </span> <!--! Poner logica cambio de año  -->
+    <p class="footer-copyright__p" id="copyright">
+      <span class="footer-copyright__span"></span>
       <span class="footer-copyright__span footer-copyright__span--color">
-        <a href="index.html"> Eddev </a></span>
+        <a href="https://bydiamondgod.github.io/" target="_blank" rel="noopener noreferrer"></a>
+      </span>
     </p>
   </footer>
 
