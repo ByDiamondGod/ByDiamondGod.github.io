@@ -17,7 +17,7 @@
   color: #c9c5c5;
   list-style: none;
   text-decoration: none;
-  /*  outline: 1px solid #ff0000; */
+  /*  outline: 1px solid #ff0000; */ /* Testing */
 }
 
 /** Body | Scroll */
@@ -111,7 +111,7 @@ body {
   line-height: 19px;
   align-items: baseline;
   justify-content: flex-start;
-  font-size: 17px;
+  font-size: clamp(14px, 1vw, 16px);
 }
 
 .header__li {
@@ -162,12 +162,15 @@ body {
 }
 
 .introduction-name__p2 {
-  max-width: 500px;
+  width: 550px;
+  font-size: clamp(14px, 2vw, 16px);
   line-height: 32px;
   margin: 0 0 32px 0;
   padding-left: 32px;
   position: relative;
   display: inline-block;
+  text-wrap: balance ;
+  text-shadow: rgb(0, 0, 0) 0.5px 1px 1px;
 }
 
 .icons__ul {
@@ -228,30 +231,9 @@ body {
   justify-content: center;
 }
 
-.tittle__h2 {
+.tittle__h2, .tittle__h3, .tittle__h4 {
   padding-left: 1rem;
   font-style: normal;
-  font-weight: 00;
-  font-size: 40px;
-  line-height: 70px;
-  margin: 0 0 32px;
-  text-shadow: 0.5px 1px 1px #000;
-}
-
-.tittle__h3 {
-  padding-left: 1rem;
-  font-style: normal;
-  font-weight: 00;
-  font-size: 40px;
-  line-height: 70px;
-  margin: 0 0 32px;
-  text-shadow: 0.5px 1px 1px #000;
-}
-
-.tittle__h4 {
-  padding-left: 1rem;
-  font-style: normal;
-  font-weight: 00;
   font-size: 40px;
   line-height: 70px;
   margin: 0 0 32px;
@@ -311,6 +293,7 @@ body {
   font-weight: 300;
   line-height: 1.5rem;
   letter-spacing: 0.005rem;
+  text-shadow: rgb(0, 0, 0) 0.5px 0.2px 0.1px;
 }
 
 /*?  Portfolio   */
@@ -328,14 +311,8 @@ body {
   padding-left: 4.5rem;
 }
 
-.portfolio .tittle__h2 {
-  margin-right: 1rem;
-}
-
-.portfolio .tittle__h3 {
-  margin-right: 1rem;
-}
-
+.portfolio .tittle__h2,
+.portfolio .tittle__h3,
 .portfolio .tittle__h4 {
   margin-right: 1rem;
 }
@@ -413,14 +390,8 @@ body {
   max-width: 416px;
 }
 
-.experience .tittle__h2 {
-  font-size: 35px;
-}
-
-.experience .tittle__h3 {
-  font-size: 35px;
-}
-
+.experience .tittle__h2,
+.experience .tittle__h3,
 .experience .tittle__h4 {
   font-size: 35px;
 }
@@ -453,7 +424,6 @@ body {
   border-style: groove;
   border-width: 1px;
   font-size: 16px;
-  font-weight: 600;
 }
 
 /*?  Experience right    */
@@ -512,19 +482,19 @@ body {
   border-width: 1px;
 }
 
-.experience-information {
-  text-align: justify;
-}
-
 .experience-information__li {
+  text-align: left;
   padding: 5px;
   line-height: 1.7rem;
+  font-size: clamp(11.5px, 1vw, 16px);
+  text-wrap: wrap;
 }
 
 .experience-information__span {
   color: #5d50eb;
   font-weight: 600;
   font-size: 0.9rem;
+  margin-right: 0.6rem;
 }
 
 /*?  Skills - Education    */
@@ -539,14 +509,8 @@ body {
   margin: 40px 0px 130px 0px;
 }
 
-.skills .tittle__h2 {
-  font-size: 35px;
-}
-
-.skills .tittle__h3 {
-  font-size: 35px;
-}
-
+.skills .tittle__h2,
+.skills .tittle__h3,
 .skills .tittle__h4 {
   font-size: 35px;
 }
@@ -851,18 +815,9 @@ body {
   text-align: center;
 }
 
-.contact .above__p {
-  padding: 0;
-}
-
-.contact .tittle__h2 {
-  padding: 0;
-}
-
-.contact .tittle__h3 {
-  padding: 0;
-}
-
+.contact .above__p,
+.contact .tittle__h2,
+.contact .tittle__h3,
 .contact .tittle__h4 {
   padding: 0;
 }
@@ -964,21 +919,13 @@ footer {
     margin-right: auto;
   }
 
-  .education .above__p {
-    padding-left: 0;
-  }
-
-  .education .tittle__h2 {
-    padding-left: 0;
-  }
-
-  .education .tittle__h3 {
-    padding-left: 0;
-  }
-
+  .education .above__p,
+  .education .tittle__h2,
+  .education .tittle__h3,
   .education .tittle__h4 {
     padding-left: 0;
   }
+  
 
   /*! skills */
 
@@ -1024,8 +971,12 @@ footer {
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 975px) {
   /*! contact */
+
+  .contact .container {
+    justify-content: center;
+}
 
   .contact-forms {
     width: 100%;
@@ -1044,21 +995,13 @@ footer {
     padding-left: 2rem;
   }
 
-  .above__p {
-    padding-left: 0;
-  }
-
-  .tittle__h2 {
-    padding-left: 0;
-  }
-
-  .tittle__h3 {
-    padding-left: 0;
-  }
-
+  .above__p,
+  .tittle__h2,
+  .tittle__h3,
   .tittle__h4 {
     padding-left: 0;
   }
+
 
   .content {
     text-align: center;
@@ -1354,20 +1297,13 @@ footer {
     padding-left: 0;
   }
 
-  .portfolio .tittle__h2 {
-    padding-left: 0;
-    margin-right: 0;
-  }
-
-  .portfolio .tittle__h3 {
-    padding-left: 0;
-    margin-right: 0;
-  }
-
+  .portfolio .tittle__h2,
+  .portfolio .tittle__h3,
   .portfolio .tittle__h4 {
     padding-left: 0;
     margin-right: 0;
   }
+
 
   .portfolio-web {
     flex-direction: column;
@@ -1451,6 +1387,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 558px) {
+  .introduction-name__p2 {
+      width: 370px;
+  }
+}
+
 @media screen and (max-width: 535px) {
   /*! Header */
 
@@ -1462,11 +1404,6 @@ footer {
   }
 
   /*! Introduction */
-
-  .introduction-name__p2 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 
   .services__p {
     width: auto;
@@ -1487,15 +1424,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 482px) {
+@media screen and (max-width: 500px) {
   /*! Introduction */
 
   .introduction .container {
     margin-top: 3rem;
-  }
-
-  .introduction-name__p2 {
-    width: 370px;
   }
 
   /*! Skills */
@@ -1520,7 +1453,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 475px) {
   /*! Introduction */
 
   .introduction .above__p {
@@ -1557,9 +1490,13 @@ footer {
   }
 }
 
-@media screen and (max-width: 376px) {
-  /*! Introduction */
-  .introduction-name__p2 {
-    width: 340px;
+@media screen and (max-width: 420px) {
+
+    .skills-card {
+      padding: 2rem;
+    }
+
+    .skill__bar {
+      width: 150px;
+    }
   }
-}
