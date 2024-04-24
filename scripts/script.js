@@ -1,3 +1,6 @@
+import "../css/styles.css";
+import "../css/optimize.css";
+
 /* Adding a class to the nav element when the button is clicked.----------- */
 const button = document.querySelector(".menu-btn");
 const nav = document.querySelector(".header__nav");
